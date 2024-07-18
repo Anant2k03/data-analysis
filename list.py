@@ -10,6 +10,6 @@ for element in list1[::-1]:
 my_list = [1, 2, 3, 4, 5]
 sequence = ['a', 'b', 'c']
 index = 2
-# for i, element in enumerate(sequence):
-#     my_list.insert(index + i, element)
-# print(my_list)
+for i, element in enumerate(sequence):
+     my_list.insert(index + i, element)
+ print(my_list)

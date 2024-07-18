@@ -132,11 +132,14 @@ print("\nStudents with English marks greater than 50:")
 for student in students:
     print(student)
 
+# Find the top 4 scorers in Maths
+top_four_maths = sorted(data_dict.items(), key=lambda x: x[1]['Maths'], reverse=True)[:4]
 
-# Find the top four scorers in Maths
-maths_score = sorted(data_dict.values(), key=lambda x: x['Maths'], reverse=True)[:4]
-maths_score = [(student['stdname'], student['Age']) for student in maths_score]
+# Extract the name and age of the top 4 scorers
+top_four_maths_info = [(info['stdname'], info['Age']) for _, info in top_four_maths]
 
-print("\nTop four scorers in Maths (Name and Age):")
-for name, age in maths_score:
-    print(f"{name}, Age: {age}")
+# Print the results
+print("\nTop 4 scorers in Maths:")
+for name, age in top_four_maths_info:
+    print(f"{name} - Age: {age}")
+

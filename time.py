@@ -10,14 +10,3 @@ while totalseconds >= 60:
     totalseconds -= 60
 seconds = totalseconds
 print(f"Time: {hours} hours, {minutes} minutes, {seconds} seconds")
-
-
-time = int(input("enter time in seconds : "))
-min = time//60
-haur=time//3600
-sec=time%3600
-print(haur,"Haur", min, "Minute", sec,"Sec")
-
-
-
-
